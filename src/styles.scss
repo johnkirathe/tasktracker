@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Angular Material theming and styles
+@use '@angular/material' as mat;
+
+// Include the core styles
+@include mat.core();
+
+// Import the prebuilt theme
+@import '@angular/material/prebuilt-themes/magenta-violet.css';
+
+// Define your global styles
+html, body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: azure;
+  background-image: linear-gradient(45deg, #b984b9 25%, transparent 25%, transparent 50%, aliceblue 50%, #e1a5e1 75%, transparent 75%, #775377);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make the container at least full height of the viewport */
+}
+
+
+.footer {
+  background-color: #343a40; /* Dark background for the footer */
+  color: white; /* White text */
+  text-align: center; /* Center the footer text */
+}
+
+
+// Define your theme
+$theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$violet-palette,
+  ),
+  typography: (
+    brand-family: 'Comic Sans',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+
+// Apply the theme to all Angular Material components
+html {
+  @include mat.all-component-themes($theme);
+  @include mat.strong-focus-indicators-theme(purple);
+}
+
+.magenta-color {
+  color: darkmagenta;
+}

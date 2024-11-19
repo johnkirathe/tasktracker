@@ -1,0 +1,164 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "completed": true,
+      "title": "Complete Angular tutorial",
+      "description": "Finish the official Angular documentation tutorial.",
+      "priority": "high",
+      "dueDate": "2024-11-01"
+    },
+    {
+      "id": "2",
+      "completed": false,
+      "title": "Write unit tests for API",
+      "description": "Ensure all backend endpoints have proper test coverage.",
+      "priority": "medium",
+      "dueDate": "2024-11-05"
+    },
+    {
+      "id": "4",
+      "completed": false,
+      "title": "Refactor user authentication",
+      "description": "Implement JWT tokens and improve security protocols.",
+      "priority": "high",
+      "dueDate": "2024-11-08"
+    },
+    {
+      "id": "5",
+      "completed": true,
+      "title": "Design new landing page",
+      "description": "Create a modern, responsive design for the homepage.",
+      "priority": "medium",
+      "dueDate": "2024-10-30"
+    },
+    {
+      "id": "6",
+      "completed": false,
+      "title": "Set up CI/CD pipeline",
+      "description": "Automate testing and deployment with GitHub Actions.",
+      "priority": "high",
+      "dueDate": "2024-11-07"
+    },
+    {
+      "id": "7",
+      "completed": false,
+      "title": "Write blog post on web accessibility",
+      "description": "Discuss best practices for making websites accessible.",
+      "priority": "medium",
+      "dueDate": "2024-11-15"
+    },
+    {
+      "id": "8",
+      "completed": false,
+      "title": "Optimize image assets",
+      "description": "Reduce image sizes for faster page loading times.",
+      "priority": "low",
+      "dueDate": "2024-11-10"
+    },
+    {
+      "id": "9",
+      "completed": true,
+      "title": "Prepare client presentation",
+      "description": "Finalize slides for the quarterly progress update.",
+      "priority": "high",
+      "dueDate": "2024-10-28"
+    },
+    {
+      "id": "10",
+      "completed": false,
+      "title": "Research on AI integration",
+      "description": "Explore possibilities of using AI for data analysis.",
+      "priority": "medium",
+      "dueDate": "2024-11-20"
+    },
+    {
+      "id": "11",
+      "completed": false,
+      "title": "Document API endpoints",
+      "description": "Write detailed documentation for all available APIs.",
+      "priority": "low",
+      "dueDate": "2024-11-18"
+    },
+    {
+      "id": "12",
+      "completed": true,
+      "title": "Fix critical bugs in payment gateway",
+      "description": "Resolve issues causing failed transactions.",
+      "priority": "high",
+      "dueDate": "2024-10-29"
+    },
+    {
+      "id": "13",
+      "completed": false,
+      "title": "Create test cases for frontend",
+      "description": "Cover edge cases in user interface components.",
+      "priority": "medium",
+      "dueDate": "2024-11-06"
+    },
+    {
+      "id": "14",
+      "completed": false,
+      "title": "Conduct usability testing",
+      "description": "Gather feedback from users on the beta version.",
+      "priority": "medium",
+      "dueDate": "2024-11-12"
+    },
+    {
+      "id": "15",
+      "completed": true,
+      "title": "Write server migration plan",
+      "description": "Plan migration to cloud infrastructure.",
+      "priority": "low",
+      "dueDate": "2024-10-25"
+    },
+    {
+      "id": "16",
+      "completed": false,
+      "title": "Review pull requests",
+      "description": "Ensure code quality and consistency.",
+      "priority": "low",
+      "dueDate": "2024-11-04"
+    },
+    {
+      "id": "17",
+      "completed": false,
+      "title": "Upgrade database schema",
+      "description": "Introduce support for new application features.",
+      "priority": "high",
+      "dueDate": "2024-11-11"
+    },
+    {
+      "id": "18",
+      "completed": true,
+      "title": "Conduct team training session",
+      "description": "Introduce team members to the new framework.",
+      "priority": "medium",
+      "dueDate": "2024-10-27"
+    },
+    {
+      "id": "19",
+      "completed": false,
+      "title": "Improve caching mechanisms",
+      "description": "Enhance performance by optimizing caching layers.",
+      "priority": "high",
+      "dueDate": "2024-11-09"
+    },
+    {
+      "id": "20",
+      "completed": false,
+      "title": "Finalize project timeline",
+      "description": "Define key milestones for the next quarter.",
+      "priority": "medium",
+      "dueDate": "2024-11-13"
+    },
+    {
+      "id": "21",
+      "completed": false,
+      "title": "Update application logo",
+      "description": "Redesign the logo to align with branding.",
+      "priority": "low",
+      "dueDate": "2024-11-14"
+    }
+  ]
+}
