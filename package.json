@@ -28,12 +28,10 @@
     "@ngrx/effects": "^18.1.1",
     "@ngrx/store": "^18.1.1",
     "@ngrx/store-devtools": "^18.1.1",
-    "@ngx-translate/core": "^16.0.3",
-    "@ngx-translate/http-loader": "^16.0.0",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
     "json-server": "^1.0.0-beta.3",
-    "ngx-translatekit": "^0.0.2",
+    "ngx-translatehub": "^0.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

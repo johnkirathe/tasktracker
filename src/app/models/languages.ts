@@ -1,6 +1,7 @@
-export const languages = [
-  'en', // English
-  'de', // German
-  'fr', // German
-  'ar', // German
-];
+export interface Languages {
+  code: string,
+  name: string,
+  targets: [
+    string
+  ]
+}

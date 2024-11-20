@@ -1,0 +1,12 @@
+{
+  "welcomeTitle": "Welcome to Task Tracker",
+  "welcomeDescription1": "Your ultimate productivity companion, designed to help you organize, prioritize, and accomplish tasks seamlessly. Keep track of your goals, set deadlines, and monitor your progress—all in one place!",
+  "welcomeDescription2": "Whether you're managing personal projects or collaborating with a team, Task Tracker provides the tools you need to stay on top of your tasks and achieve your goals.",
+  "getStarted": "Get Started",
+  "feature1Title": "Easy Task Management",
+  "feature1Description": "Add, edit, and delete tasks quickly and efficiently.",
+  "feature2Title": "Set Priorities & Deadlines",
+  "feature2Description": "Stay on top of your goals by prioritizing tasks and setting deadlines.",
+  "feature3Title": "Track Your Progress",
+  "feature3Description": "Monitor progress with real-time status indicators for each task."
+}

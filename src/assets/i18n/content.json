@@ -1,7 +1,7 @@
 {
   "header": {
-    "home": "HOME",
-    "tasks": "TASKS"
+    "home": "home",
+    "tasks": "tasks"
   },
 
   "home": {

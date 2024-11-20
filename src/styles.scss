@@ -53,3 +53,14 @@ html {
 .magenta-color {
   color: darkmagenta;
 }
+
+.rtl {
+  direction: rtl;
+  text-align: start; /* 'start' will align text to the right in RTL mode */
+}
+
+/* Other styles to adjust padding, margins, etc., for RTL layout */
+.rtl .some-class {
+  padding-right: 15px;
+  padding-left: 0;
+}
