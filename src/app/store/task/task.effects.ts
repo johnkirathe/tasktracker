@@ -3,10 +3,10 @@ import {catchError, map, switchMap} from "rxjs/operators";
 import {of} from 'rxjs';
 import {sharedActions} from "../shared/shared.actions";
 import {Store} from "@ngrx/store";
-import {TasksService} from "../../services/tasks.service";
 import {Task} from "../../models/task";
 import {taskActions} from "./task.action";
 import {Actions, createEffect, ofType} from "@ngrx/effects";
+import {TasksService} from "../../services/tasks.service";
 
 @Injectable()
 export class TaskEffects {
