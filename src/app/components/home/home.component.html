@@ -1,0 +1,55 @@
+<div class=" " libRtlSupportDirective [currentLang]="language()">
+  <mat-card class="bg-magenta text-center shadow p-4 full-card shadow">
+    <mat-card-header class="d-flex justify-content-center align-items-center h1">
+      <h1 class="mat-display-2 text-accent mb-1">{{ translatedData.welcomeTitle  }}</h1>
+    </mat-card-header>
+
+    <mat-card-content class="bg-magento-light p-5">
+      <p class="mat-body-2 mb-3 h4">
+        {{ translatedData.welcomeDescription1  }}
+      </p>
+      <p class="mat-body-2 mb-3 h5">
+        {{ translatedData.welcomeDescription2  }}
+      </p>
+    </mat-card-content>
+
+    <div class="mt-4 text-center justify-content-end">
+      <button mat-raised-button color="accent" routerLink="/tasks" class="px-4 py-2 btn btn-lg">
+        {{ translatedData.getStarted  }}
+      </button>
+    </div>
+
+    <mat-divider class="my-2"></mat-divider>
+
+    <section class="features mt-3 d-flex justify-content-center align-items-center">
+      <mat-list class="feature-list mt-2">
+        <mat-list-item>
+          <mat-icon color="primary" mat-list-icon>check_circle</mat-icon>
+          <div class="feature-details">
+            <h4 class="mat-body-1">{{ translatedData.feature1Title  }}</h4>
+            <p class="mat-body-2">{{ translatedData.feature1Description  }}</p>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item>
+          <mat-icon color="primary" mat-list-icon>schedule</mat-icon>
+          <div class="feature-details">
+            <h4 class="mat-body-1">{{ translatedData.feature2Title  }}</h4>
+            <p class="mat-body-2">{{ translatedData.feature2Description  }}</p>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item>
+          <mat-icon color="primary" mat-list-icon>dashboard</mat-icon>
+          <div class="feature-details">
+            <h4 class="mat-body-1">{{ translatedData.feature3Title  }}</h4>
+            <p class="mat-body-2">{{ translatedData.feature3Description  }}</p>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </section>
+
+    <mat-card-actions class="mt-4 text-center justify-content-end">
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,77 @@
+<div libRtlSupportDirective [currentLang]="language()">
+  <div class="d-flex justify-content-between align-items-center">
+    <h3 class="mat-h3 magenta-color">{{ translatedData?.task_list?.title  }}</h3>
+    <button mat-raised-button color="primary" type="button" routerLink="/add">
+      {{ translatedData?.task_list?.add_task  }}
+    </button>
+  </div>
+  @defer (prefetch on immediate) {
+    <div class="row">
+      @for (task of tasks(); track $index) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <mat-card appearance="raised" class="bg-white task-card">
+            <div class="p-2" [ngClass]="{'completed-task': task.completed}">
+              <mat-card-header>
+                <a [routerLink]="['/tasks/', task.id]">
+                  <mat-card-title class="mat-h4">{{ task.title  }}</mat-card-title>
+                </a>
+              </mat-card-header>
+              <mat-card-content>
+                <a [routerLink]="['/tasks/', task.id]">
+                  <p class="text-black-50 small font-weight-light">{{ task.description  }}</p>
+                </a>
+              </mat-card-content>
+              <mat-card-footer>
+                <mat-chip-set class="m-4 h6">
+                  <button mat-flat-button
+                          class="align-content-center border rounded px-2"
+                          [ngClass]="task.completed ? 'bg-success' : 'bg-danger'">
+                    <span class="text-white">
+                      {{ translatedData?.task_list?.completed }}: {{ task.completed }}
+                    </span>
+                  </button>
+
+                  <button mat-flat-button
+                          class="align-content-center border rounded px-2"
+                          [ngClass]="{'bg-info': task.priority === 'low', 'bg-warning': task.priority === 'medium',
+                          'bg-success': task.priority === 'high'}">
+                    <span class="text-white">
+                      {{ translatedData?.task_list?.priority }}: {{ task.priority  }}
+                    </span>
+                  </button>
+
+                  <button mat-flat-button
+                          class="bg-white align-content-center border rounded px-2">
+                    {{ translatedData?.task_list?.due_date  }}: {{ task.dueDate | date }}
+                  </button>
+                </mat-chip-set>
+              </mat-card-footer>
+            </div>
+            <div class="d-flex justify-content-between align-items-center px-2 pb-3 gap-2">
+              <button mat-raised-button class="bg-white"
+                      [ngClass]="{'completed-task': task.completed}"
+                      (click)="openDialog(task)">
+                <mat-icon class="text-primary">edit</mat-icon>
+                {{ translatedData?.task_list?.edit  }}
+              </button>
+              <button mat-raised-button class="bg-white"
+                      [ngClass]="{'completed-task': task.completed}"
+                      (click)="completeTask(task)">
+                <mat-icon class="text-danger">done_all</mat-icon>
+                {{ translatedData?.task_list?.complete  }}
+              </button>
+              <button mat-raised-button color="info" class="delete" (click)="deleteTask(task.id)">
+                <mat-icon class="text-danger">delete</mat-icon>
+                {{ translatedData?.task_list?.delete  }}
+              </button>
+            </div>
+          </mat-card>
+        </div>
+      } @empty {
+        <p>{{ translatedData?.task_list?.no_tasks }}</p>
+      }
+    </div>
+  } @placeholder (minimum 500ms) {
+    <div>{{ translatedData?.task_list?.loading  }}</div>
+  }
+</div>

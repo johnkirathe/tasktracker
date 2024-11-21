@@ -1,0 +1,30 @@
+<header class="header" libRtlSupportDirective [currentLang]="language()">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 d-flex justify-content-between align-items-center">
+      <a  class="navbar-brand magenta-color" routerLink="">TT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a  class="nav-link" routerLink="">{{ translatedData.home }}</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="tasks">{{ translatedData.tasks }}</a>
+          </li>
+        </ul>
+      </div>
+    <mat-form-field [formGroup]="form" appearance="outline" class="lang">
+      <mat-label>{{ translatedData.languages }}</mat-label>
+      <mat-select (selectionChange)="getLanguage()" formControlName="lang" class="text-dark-emphasis">
+        @for (language of languages(); track $index) {
+          <mat-option [value]="language.code">
+            {{ language.name }}
+          </mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+  </nav>
+</header>
