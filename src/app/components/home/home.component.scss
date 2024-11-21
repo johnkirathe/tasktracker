@@ -1,0 +1,42 @@
+.bg-magenta {
+  background-color: #ab47bc; // Theme's magenta color
+}
+
+.bg-magento-light {
+  color: #e9d2ee;
+  background-color: #b35ac2; // Theme's magenta color
+}
+
+.text-accent {
+  color: #251e25; // Accent color
+}
+
+.small-card {
+  max-width: 400px; // Set a maximum width for the card
+  margin: 20px auto; // Center the card horizontally
+  border-radius: 12px; // Rounded corners for a softer look
+  box-shadow: 0 4px 20px rgba(122, 36, 36, 0.2); // Subtle shadow effect
+}
+
+.feature-list {
+  .feature-details {
+    padding-left: 8px;
+    text-align: left;
+  }
+
+  mat-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .mat-icon {
+      font-size: 28px;
+      color: #ab47bc; // Match icon color to the theme
+    }
+
+    h4 {
+      font-weight: 600;
+      margin-bottom: 2px; // Space between title and description
+    }
+  }
+}

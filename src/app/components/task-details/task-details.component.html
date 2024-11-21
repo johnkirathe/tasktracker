@@ -1,0 +1,27 @@
+<mat-card class="task-details-card p-4 bg-light shadow-lg align-items-center">
+  <mat-card-header class="border-bottom mb-3">
+    <h1 class="mat-display-2 magenta-color">{{ task().title }}</h1>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p class="mat-body-1 text-muted">{{ task().description }}</p>
+
+    <h4 class="mat-h4 text-secondary mt-4">Task Details</h4>
+    <div class="detail-row">
+      <p class="mat-body-1"><strong>Priority: </strong> <span class="text-warning">{{ task().priority }}</span></p>
+      <p class="mat-body-1"><strong>Due Date: </strong> <span class="text-dark">{{ task().dueDate | date: 'longDate' }}</span></p>
+      <p class="mat-body-1">
+        <strong>Status: </strong>
+        <span [ngClass]="{'text-success': task().completed, 'text-danger': !task().completed}">
+          {{ task().completed ? 'Completed' : 'Pending' }}
+        </span>
+      </p>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions class="d-flex justify-content-end mt-4">
+    <button mat-raised-button color="primary" routerLink="/tasks" class="btn-lg">
+      Back to Task List
+    </button>
+  </mat-card-actions>
+</mat-card>

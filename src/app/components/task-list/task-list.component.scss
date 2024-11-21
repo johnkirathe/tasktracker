@@ -1,0 +1,12 @@
+.completed-task {
+  opacity: 0.4;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+.delete {
+  opacity: 100%;
+  text-decoration: none;
+  pointer-events: all;
+  background-color: white;
+}

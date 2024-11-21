@@ -1,0 +1,12 @@
+.task-details-card {
+  width: 100%; /* Make the card full width */
+  max-width:60rem; /* Set a max width for better readability */
+  margin: auto; /* Center the card */
+  border-radius: 8px; /* Rounded corners */
+
+  .detail-row {
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    gap: 0.5rem; /* Add spacing between items */
+  }
+}

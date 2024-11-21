@@ -1,0 +1,58 @@
+<div class="w-25 m-auto p-4 ">
+  <div class="card shadow-lg ">
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+      <mat-card class="bg-white">
+        <mat-card-header class="d-flex justify-content-center">
+          <h2>Create Task</h2>
+        </mat-card-header>
+
+        <mat-card-content>
+          <div class="row">
+            <mat-form-field appearance="outline">
+              <mat-label>Task Title</mat-label>
+                <input matInput formControlName="title" class="text-dark-emphasis"/>
+              @if (taskForm.get('title')?.hasError('required')) {
+                <mat-error>Title is required.</mat-error>
+              }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Description</mat-label>
+              <textarea matInput formControlName="description" class="text-dark-emphasis"></textarea>
+              @if (taskForm.get('description')?.hasError('required')) {
+                <mat-error>Description is required.</mat-error>
+              }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Priority</mat-label>
+              <mat-select formControlName="priority" class="text-dark-emphasis">
+                <mat-option value="low">Low</mat-option>
+                <mat-option value="medium">Medium</mat-option>
+                <mat-option value="high">High</mat-option>
+              </mat-select>
+
+              @if (taskForm.get('priority')?.hasError('required')) {
+                <mat-error>Priority is required.</mat-error>
+              }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Due Date</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="dueDate" class="text-dark-emphasis"/>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              @if (taskForm.get('dueDate')?.hasError('required')) {
+                <mat-error>Due date is required.</mat-error>
+              }
+            </mat-form-field>
+            <mat-checkbox formControlName="completed">Completed</mat-checkbox>
+          </div>
+        </mat-card-content>
+        <mat-card-actions class="d-flex justify-content-center">
+           <button mat-raised-button color="primary" type="submit" [disabled]="taskForm.invalid">Submit</button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+</div>
