@@ -1,0 +1,14 @@
+{
+  "task_list": {
+    "title": "Task List",
+    "add_task": "Add Task",
+    "completed": "Completed",
+    "priority": "Priority",
+    "due_date": "Due Date",
+    "edit": "Edit",
+    "complete": "Complete",
+    "delete": "Delete",
+    "no_tasks": "No tasks found.",
+    "loading": "Loading..."
+  }
+}
